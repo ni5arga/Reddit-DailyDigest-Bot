@@ -56,7 +56,7 @@ The bot will fetch that day's top posts from the specified subreddits, compile t
 
 ### Auto-running the script
 
-To make your Reddit Daily Digest Bot run automatically every 24 hours, you can use a scheduler like `cron` (on Unix-like systems) or Task Scheduler (on Windows). Here's how you can set up the automatic scheduling and instructions in Markdown format:
+To make your Reddit Daily Digest Bot run automatically every 24 hours, you can use a scheduler like `cron` (on Unix-like systems) or Task Scheduler (on Windows). Here's how you can set up the automatic scheduling :
 
 **Automate Script Execution Every 24 Hours**
 
