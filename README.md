@@ -1,12 +1,14 @@
 # Reddit Daily Digest Bot
 
-**Reddit Daily Digest Bot** is a Python bot designed to simplify the process of aggregating and sharing top posts from your favorite subreddits. It fetches the most popular posts from specified subreddits, compiles them into a neatly formatted daily digest, and automatically posts the digest to a target subreddit of your choice.
+**Reddit Daily Digest Bot** is a Python bot designed to simplify the process of aggregating and sharing top posts from your favorite subreddits. It fetches the most popular posts from specified subreddits, compiles them into a neatly formatted daily digest, and automatically posts the digest to a target subreddit of your choice. Also works for hot, controversial, rising & new posts. You can also specify your own time range for the posts the bot will fetch.
 
 ## Key Features
 
-- Fetch top posts from multiple subreddits.
-- Compile top posts into a daily digest with post titles, links and author (i'll add more stuff soon)
-- Post the daily digest to a designated subreddit with ease.
+- Can create daily digest of most popular posts from multiple subreddits.
+- Fetch top, hot, controversial, rising, new posts from multiple subreddits in the time frame you want.
+- Compile the fetched posts into a digest with post titles, links and author.
+- Post the digest to a designated subreddit with ease.
+
 
 ## Getting Started
 
@@ -73,10 +75,35 @@ TIME_RANGE = 'day'
 
 ### Usage
 After configuring it properly simply run the bot script :
+
+#### Daily Digest Script
+
 ```bash 
 py main.py
 ```
 The bot will fetch that day's top posts from the specified subreddits, compile them into a daily digest, and post it to the target subreddit.
+
+#### Additional Sorting Scripts
+
+**Fetch Top Posts (top.py)**
+```bash
+python top.py
+```
+Fetches and compiles the top posts from the specified subreddits based in the user specified `TIME_RANGE`.
+
+**Fetch Rising Posts (rising.py)**
+```bash
+python rising.py
+```
+Fetches and compiles the rising posts from the specified subreddits based on the daily sorting method.
+
+**Fetch New Posts (new.py)**
+`python new.py`
+Fetches and compiles the new posts from the specified subreddits based on the daily sorting method.
+
+**Fetch Controversial Posts (controversial.py)**
+`python controversial.py`
+Fetches and compiles the controversial posts from the specified subreddits based on the user specified `TIME_RANGE`.
 
 ### Auto-running the script
 
