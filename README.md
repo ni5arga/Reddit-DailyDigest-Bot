@@ -71,8 +71,6 @@ TIME_RANGE = 'day'
 - `'year'`: Fetch top posts from the last 365 days.
 - `'all'`: Fetch top posts from all time.
 
-This won't affect the `main.py` script or any other script as they are intended to work on the basis of daily posts.
-
 ### Usage
 After configuring it properly simply run the bot script :
 ```bash 
