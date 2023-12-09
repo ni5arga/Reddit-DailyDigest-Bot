@@ -109,6 +109,13 @@ python controversial.py
 ```
 Fetches and compiles the controversial posts from the specified subreddits based on the user specified `TIME_RANGE`.
 
+- **Fetch Hot Posts (hot.py)**
+```bash 
+python hot.py
+```
+Fetches and compiles the top hot posts from the specified subreddits based on the daily sorting method.
+
+
 ### Auto-running the script for the daily digest
 
 To make your Reddit Daily Digest Bot run automatically every 24 hours, you can use a scheduler like `cron` (on Unix-like systems) or Task Scheduler (on Windows). Here's how you can set up the automatic scheduling :
