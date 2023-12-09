@@ -35,17 +35,43 @@ You'll need to have the following installed on your system:
    ```
 
 ### Configuration 
-Open the main.py script and locate the following variables:
+### Reddit API Credentials
 
-`client_id`
-`client_secret`
-`user_agent`
-`reddit_username`
-`reddit_password`
+Open the `config.py` file and replace the placeholders with your Reddit API credentials:
 
-Replace the placeholders with your Reddit API credentials and Reddit account information.
+```python
+CLIENT_ID = 'your_client_id'
+CLIENT_SECRET = 'your_client_secret'
+USER_AGENT = 'your_user_agent'
+REDDIT_USERNAME = 'your_reddit_username'
+REDDIT_PASSWORD = 'your_reddit_password'
+```
 
-Next, modify the `subreddits` list in `main.py` to specify the subreddits from which you want to fetch posts. Also modify `subreddit_name` in L36 with the subreddit name you need the bot post content to.
+### Subreddits 
+Modify the `SUBREDDITS` variable in `config.py` to specify the subreddits from which you want to fetch posts. Don't include r/ before the name of the subreddit.
+
+```python
+SUBREDDITS = ['science', 'technology', 'maths', 'physics']
+```
+
+### Target Subreddit 
+Replace the `TARGET_SUBREDDIT` variable with the subreddit name where you want the bot to post the content:
+
+```python
+TARGET_SUBREDDIT = 'your_target_subreddit_name'
+```
+### Time Range
+Update the `TIME_RANGE` to the time range you need for the `controversial.py` and `top.py` script
+```python
+TIME_RANGE = 'day' 
+```
+-`'day'`: Fetch top posts from the last 24 hours.
+-`'week'`: Fetch top posts from the last 7 days.
+-`'month'`: Fetch top posts from the last 30 days.
+-`'year'`: Fetch top posts from the last 365 days.
+-`'all'`: Fetch top posts from all time.
+
+This won't affect the `main.py` script or any other script as they are intended to work on the basis of daily posts.
 
 ### Usage
 After configuring it properly simply run the bot script :
