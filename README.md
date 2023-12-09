@@ -85,24 +85,28 @@ The bot will fetch that day's top posts from the specified subreddits, compile t
 
 #### Additional Sorting Scripts
 
-**Fetch Top Posts (top.py)**
+- **Fetch Top Posts (top.py)**
 ```bash
 python top.py
 ```
 Fetches and compiles the top posts from the specified subreddits based in the user specified `TIME_RANGE`.
 
-**Fetch Rising Posts (rising.py)**
+- **Fetch Rising Posts (rising.py)**
 ```bash
 python rising.py
 ```
 Fetches and compiles the rising posts from the specified subreddits based on the daily sorting method.
 
-**Fetch New Posts (new.py)**
-`python new.py`
+- **Fetch New Posts (new.py)**
+```bash 
+python new.py
+```
 Fetches and compiles the new posts from the specified subreddits based on the daily sorting method.
 
-**Fetch Controversial Posts (controversial.py)**
-`python controversial.py`
+- **Fetch Controversial Posts (controversial.py)**
+```bash
+python controversial.py
+```
 Fetches and compiles the controversial posts from the specified subreddits based on the user specified `TIME_RANGE`.
 
 ### Auto-running the script
