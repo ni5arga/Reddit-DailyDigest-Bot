@@ -65,11 +65,11 @@ Update the `TIME_RANGE` to the time range you need for the `controversial.py` an
 ```python
 TIME_RANGE = 'day' 
 ```
--`'day'`: Fetch top posts from the last 24 hours.
--`'week'`: Fetch top posts from the last 7 days.
--`'month'`: Fetch top posts from the last 30 days.
--`'year'`: Fetch top posts from the last 365 days.
--`'all'`: Fetch top posts from all time.
+- `'day'`: Fetch top posts from the last 24 hours.
+- `'week'`: Fetch top posts from the last 7 days.
+- `'month'`: Fetch top posts from the last 30 days.
+- `'year'`: Fetch top posts from the last 365 days.
+- `'all'`: Fetch top posts from all time.
 
 This won't affect the `main.py` script or any other script as they are intended to work on the basis of daily posts.
 
